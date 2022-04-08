@@ -1,0 +1,26 @@
+,route,company_ID,price_usd
+0,Amsterdam-Sydney,18,7148
+1,Sydney-Amsterdam,15,6111
+2,Sydney-Amsterdam,21,5245
+3,Amsterdam-Sydney,22,5178
+4,Amsterdam-Sydney,24,4881
+5,Sydney-Amsterdam,8,4114
+6,Sydney-Paris,4,4028
+7,Amsterdam-Paris,1,3898
+8,Kiev-Hong Kong,12,3782
+9,Sydney-Amsterdam,2,3601
+10,Sao Paolo-Amsterdam,3,3595
+11,New Delhi-Sydney,16,3561
+12,Sydney-Amsterdam,6,3479
+13,Paris-Amsterdam,10,3389
+14,Paris-Sydney,25,3355
+15,Sydney-Paris,9,3335
+16,Paris-Sydney,5,3331
+17,Sao Paolo-Sydney,23,3305
+18,London-Amsterdam,7,3192
+19,Paris-Sydney,17,3130
+20,Sao Paolo-Sydney,19,3082
+21,Amsterdam-Paris,11,2900
+22,Sydney-Paris,20,2877
+23,Amsterdam-Sydney,13,2623
+24,Sao Paolo-Paris,14,2433

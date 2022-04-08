@@ -104,8 +104,11 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.q5venv
 env/
+.vscode
 venv/
+q5venv/
 ENV/
 env.bak/
 venv.bak/
