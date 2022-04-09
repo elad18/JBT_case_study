@@ -1,6 +1,8 @@
 """Module to test spark app.
 NOTE-assert_pyspark_df_equal will return None where there are no differences.
 """
+from datetime import date
+
 import bookings
 from pyspark.sql.types import (DateType, IntegerType, LongType, StringType,
                                StructField, StructType)
@@ -19,6 +21,20 @@ EXPECTED_SCHEMA = StructType([
     StructField("price_usd", IntegerType(), True),
     StructField("status", StringType(), True)
     ])
+
+
+def test_date_compare_false() -> None:
+    """Test that date comparison returns True when booking date > dep date."""
+    booking_date = date(2021, 2, 1)
+    departure_date = date(2021, 1, 1)
+    assert bookings.compare_dates(booking_date, departure_date) is True
+
+
+def test_date_compare_true() -> None:
+    """Test that date comparison returns False when booking date < dep date."""
+    booking_date = date(2021, 1, 1)
+    departure_date = date(2021, 2, 1)
+    assert bookings.compare_dates(booking_date, departure_date) is False
 
 
 def test_pre_processing() -> None:
