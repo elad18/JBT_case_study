@@ -13,6 +13,7 @@ def compare_dates(booking_date: datetime.date, departure_date:
 
     :param booking_date: the date a booking was made
     :param departure_date: the departure date of a booking
+    :returns: True if booking_date > departure_date else False
     """
     return bool(booking_date > departure_date)
 
